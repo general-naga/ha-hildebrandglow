@@ -29,7 +29,7 @@ SENSORS: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
         key="gas_consumption",
         name="Gas Consumption",
-        native_unit_of_measurement=VOLUME_CUBIC_METERS,
+        native_unit_of_measurement=ENERGY_KILO_WATT_HOUR,
         device_class=DEVICE_CLASS_GAS,
         state_class=STATE_CLASS_TOTAL_INCREASING,
     ),
